@@ -26,3 +26,9 @@ def hottest(devices):
 @app.get("/devices")
 def get_devices():
     return readings
+
+
+
+@app.get("/devices/hottest")
+def get_hottest_device():
+    return hottest(readings)
