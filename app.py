@@ -20,3 +20,9 @@ def average_temp(devices):
 def hottest(devices):
     """Return the dictionary of the device with the highest temperature."""
     return max(devices, key=lambda d: d["temp"])
+
+
+
+@app.get("/devices")
+def get_devices():
+    return readings
